@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercises</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .exercici1 {
+            background-image: url('https://www.w3schools.com/css/gradient_bg.png');
+            background-repeat: repeat-x;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .exercici2 {
+            background-image: url('https://www.w3schools.com/css/img_tree.png');
+            background-attachment: fixed;
+            background-position: top left;
+            padding: 50px;
+            width: 50%;
+        }
+
+        .exercici3 input {
+            display: block;
+            width: 300px;
+            margin: 10px 0;
+        }
+
+        .exercici3 .solid {
+            border: 3px solid black;
+        }
+
+        .exercise3 .dashed {
+            border: 3px dashed black;
+        }
+
+        .exercici3 .dotted {
+            border: 3px dotted black;
+        }
+
+        .exercici3 .double {
+            border: 3px double black;
+        }
+
+        .exercici4 .round-border {
+            width: 200px;
+            height: 50px;
+            border: 3px solid red;
+            border-radius: 25px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .exercici5 .margin-box {
+            margin: 25px 50px 75px 100px;
+            padding: 10px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+
+        .exercici6 .padding-box {
+            padding: 50px 30px 50px 80px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+
+        /* Exercici 7 */
+        .exercici7 p.limited-width {
+            width: 50%;
+            max-width: 300px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        /* Exercici 8 */
+        .right { text-align: right; }
+        .left { text-align: left; }
+        .center { text-align: center; }
+        .justify { text-align: justify; }
+
+        /* Exercici 9 */
+        h2.text-shadow {
+            font-family: fantasy;
+            text-shadow: 3px 3px 5px green;
+        }
+
+        /* Exercici 10 */
+        .exercici10 i:nth-child(1) {
+            font-size: 24px;
+        }
+        .exercici10 i:nth-child(2) {
+            font-size: 36px;
+        }
+        .exercici10 i:nth-child(3) {
+            font-size: 48px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <h1>CSS Exercicis</h1>
+    
+    <!-- Exercici 1 -->
+    <section class="exercici1">
+        <h2>Hello World!</h2>
+        <p>Here, a background image is repeated only horizontally!</p>
+    </section>
+
+    <!-- Exercici 2 -->
+    <section class="exercici2">
+        <h2>The background-attachment Property</h2>
+        <p>The background-image is fixed. Try to scroll down the page.</p>
+    </section>
+
+    <!-- Exercici 3 -->
+    <section class="exercici3">
+        <h2>The border-style and border-width Property</h2>
+        <input type="text" class="solid" placeholder="Some text.">
+        <input type="text" class="dashed" placeholder="Some text.">
+        <input type="text" class="dotted" placeholder="Some text.">
+        <input type="text" class="double" placeholder="Some text.">
+    </section>
+
+    <!-- Exercici 4 -->
+    <section class="exercici4">
+        <h2>The border-radius Property</h2>
+        <div class="round-border">Roundest border</div>
+    </section>
+
+    <!-- Exercici 5 -->
+    <section class="exercici5">
+        <h2>The margin shorthand property</h2>
+        <div class="margin-box">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px.</div>
+    </section>
+
+    <!-- Exercici 6 -->
+    <section class="exercici6">
+        <h2>Utilitzant la propietat tipografica:</h2>
+        <div class="padding-box">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+    </section>
+
+    <!-- Exercici 7 -->
+    <section class="exercici7">
+        <h2>Exercici 7</h2>
+        <p>This is a normal paragraph.</p>
+        <p class="limited-width">This paragraph is 50% wide with a max width of 300px.</p>
+    </section>
+
+    <!-- Exercici 8 -->
+    <section class="exercici8">
+        <h2>Exercici 8</h2>
+        <p class="right">Aquesta és una prova de justificació de text.</p>
+        <p class="left">Aquesta és una prova de justificació de text.</p>
+        <p class="center">Aquesta és una prova de justificació de text.</p>
+        <p class="justify">Aquesta és una prova de justificació de text.</p>
+    </section>
+
+    <!-- Exercici 9 -->
+    <section class="exercici9">
+        <h2 class="text-shadow">Text-shadow effect!</h2>
+    </section>
+
+    <!-- Exercici 10 -->
+    <section class="exercici10">
+        <h2>Exercici 10</h2>
+        <i class="material-icons" style="color:red;">html</i>
+        <i class="material-icons" style="color:green;">html</i>
+        <i class="material-icons" style="color:blue;">html</i>
+    </section>
+</body>
+</html>
